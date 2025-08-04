@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet"
+    type="text/css" />
+</head>
+
+<body>
+
+  <!-- Swiper container -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide intro-slide">
+        <div class="intro-content">
+          <div id="floating-lines"></div>
+          <img src="cv.png" alt="Ali Zeynali" class="profile-photo" />
+
+          <div class="intro-text">
+            <h1>Ali Zeynali</h1>
+
+            <div class="contact-icons">
+              <a href="mailto:the.ali.zeynali@gmail.com" target="_blank">📧</a>
+              <a href="https://www.linkedin.com/in/alizeynali" target="_blank">💼</a>
+              <a href="https://github.com/alizeyn" target="_blank">🐙</a>
+              <a href="https://open.spotify.com/artist/5iDffLouD21jQ3v1k0wpkf?si=VxEG0ThxQnun2Fu936DHxw"
+                target="_blank">🎵</a>
+              <a href="https://www.flickr.com/photos/195703716@N07/" target="_blank">📸</a>
+            </div>
+
+            <h2>Who is me?</h2>
+            <p>
+              I'm a software engineer and I've worked in this field for more than 10 years. I was always keeping an eye
+              on art, and that's what I'm trying to show you here, it's more of a gallery, and less of a portfolio. My
+              effort to mix art and technology — fusion
+              electronic music, photography, and videography — but let's keep it easy and call it "Art".
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide quote-slide">
+        <div id="quote-sketch-bg"></div>
+        <div class="quote-text">
+          <blockquote>
+            “They wander in darkness seeking light, failing to realize that the light is in the heart of the darkness”
+          </blockquote>
+          <cite>— Manly P. Hall</cite>
+        </div>
+      </div>
+
+      <div class="swiper-slide fractal-tree-slide">
+        <div class="fractal-tree-header">Let it visualize!</div>
+        <div id="fractal-tree-dancer"></div>
+      </div>
+
+
+      <div class="swiper-slide ali-photo-slide">
+        <div class="reachout-multilang-vertical">
+          <span class="reachout-green">Reach out—always happy to connect!</span>
+          <span class="reachout-red">Melden Sie sich – ich freue mich immer, in Kontakt zu treten!</span>
+          <span class="reachout-blue vazir">در تماس باشید—همیشه خوشحال می‌شوم ارتباط برقرار کنم!</span>
+          <span class="reachout-green vazir">تواصل معنا—دائمًا يسعدني التواصل!</span>
+          <span class="reachout-red">気軽にご連絡ください。いつでもつながれるのを楽しみにしています！</span>
+          <span class="reachout-blue">请随时联系我——我一直乐于交流！</span>
+          <span class="reachout-green">¡Comunícate! Siempre feliz de conectar.</span>
+          <span class="reachout-red">Свяжитесь со мной — я всегда рад общению!</span>
+          <span class="reachout-blue">Slobodno se javi—uvijek mi je drago povezati se!</span>
+          <span class="reachout-green">Slobodno se javite—uvijek mi je drago povezati se!</span>
+        </div>
+        <div id="photo-flash-bg"></div>
+        <div class="ali-photo-container">
+          <img src="ali.webp" alt="Ali" class="ali-photo" />
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper + p5.js + your scripts -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+  <script src="script.js"></script>
+  <script src="dyingLight.js"></script>
+  <script src="fractalTreeDancer.js"></script>
+  <script src="floatingLines.js"></script>
+  <script src="photoFlashes.js"></script>
+
+
+</body>
+
+</html>

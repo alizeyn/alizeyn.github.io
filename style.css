@@ -1,0 +1,345 @@
+/* General reset and body styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background: #000 !important;
+  color: #eee;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Swiper setup */
+.swiper,
+.swiper-slide {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Swiper pagination */
+.swiper-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+/* Intro slide */
+.intro-slide {
+  background: #000000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 2rem;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Profile photo */
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: block;
+}
+
+/* Intro text */
+.intro-text {
+  max-width: 600px;
+}
+
+.intro-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.intro-text h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.intro-text p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Contact icons */
+.contact-icons {
+  margin-top: 0.5rem;
+}
+
+.contact-icons a {
+  text-decoration: none;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  transition: opacity 0.2s ease;
+  color: #ddd;
+}
+
+.contact-icons a:hover {
+  opacity: 0.7;
+}
+
+/* Other slides (default look) */
+.swiper-slide:not(.intro-slide) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+/* Responsive behavior for intro */
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .intro-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro-text p {
+    font-size: 0.95rem;
+  }
+}
+
+.quote-slide {
+  position: relative;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+#quote-sketch-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.quote-text {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.quote-text blockquote {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #f0f0f0;
+  margin: 0;
+}
+
+.quote-text cite {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Swiper pagination bullets */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: transparent !important;
+  border: 2px solid white;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ccc !important;
+  border-color: #ccc !important;
+}
+
+/* Fractal tree slide */
+.fractal-tree-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fractal-tree-header {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #f0f0f0;
+  letter-spacing: 0.02em;
+  z-index: 2;
+  pointer-events: none;
+  text-shadow: 0 2px 16px #000;
+  line-height: 1.6;
+  user-select: none;
+}
+
+#fractal-tree-dancer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .fractal-tree-header {
+    font-size: 1.2rem;
+    top: 1rem;
+  }
+}
+
+#floating-lines-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Ali photo slide -- FULLY CENTERED fix */
+.ali-photo-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* Vertically center stack */
+  align-items: center;          /* Horizontally center */
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Flashes canvas */
+#photo-flash-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Multilanguage block (vertical, with spacing below) */
+.reachout-multilang-vertical {
+  width: 100vw;
+  max-width: 98vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.28em;
+  padding-top: 2.4em;
+  padding-bottom: 1.2em;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2em;   /* Space between text block and photo */
+}
+
+.reachout-multilang-vertical span {
+  display: block;
+  font-size: 1.08rem;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 0.8em;
+  line-height: 1.75;
+  opacity: 0.98;
+  text-shadow: 0 2px 14px #000b, 0 1px 2px #0006;
+  margin-bottom: 0.07em;
+  text-align: center;
+  padding: 0.12em 1.2em;
+  letter-spacing: 0.02em;
+}
+
+.reachout-green { color: #00ff00; }
+.reachout-red   { color: #ff2020; }
+.reachout-blue  { color: #2080ff; }
+
+/* Vazir font for Persian/Arabic */
+.vazir {
+  font-family: Vazir, Tahoma, Arial, sans-serif !important;
+  font-size: 1.11rem;
+  direction: rtl;
+}
+
+/* Ali photo, fully centered */
+.ali-photo-container {
+  position: relative;
+  z-index: 1;
+  width: 60vw;
+  max-width: 400px;
+  min-width: 120px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* NO margin-top here! */
+}
+
+.ali-photo {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px #000a, 0 1px 6px #0004;
+  border: 2px solid #fff2;
+  display: block;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .ali-photo-container {
+    width: 88vw;
+    max-width: 98vw;
+    min-width: 0;
+  }
+  .reachout-multilang-vertical span {
+    font-size: 0.98rem;
+    padding: 0.11em 0.3em;
+    line-height: 1.4;
+  }
+  .reachout-multilang-vertical {
+    margin-bottom: 1em;
+  }
+}
